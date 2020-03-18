@@ -5,6 +5,9 @@
 
 lst = [int(input('Enter an int: ')) for i in range(9)]
 
-print(f'Index of the largest number {max(lst)} is: ({lst.index(max(lst))//3}, {lst.index(max(lst))%3})')
-print(f'Index of the smallest number {min(lst)} is: ({lst.index(min(lst))//3}, {lst.index(min(lst))%3})')
+max_index = lst.index(max(lst))
+print(f'Index of the largest number {max(lst)} is: ({max_index//3}, {max_index%3})')
+
+min_index = lst.index(min(lst))
+print(f'Index of the smallest number {min(lst)} is: ({min_index//3}, {min_index%3})')
 
